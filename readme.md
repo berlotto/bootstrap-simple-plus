@@ -18,4 +18,10 @@ Screenshot
 
 ![screenshot](screenshot.png) 
 
+Live Example
+------------
+
+See the site running this template at: [pythonrs.org]
+
 [simple-bootstrap]: https://github.com/getpelican/pelican-themes/tree/master/simple-bootstrap
+[pythonrs.org]: http://pythonrs.org
