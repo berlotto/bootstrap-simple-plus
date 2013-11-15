@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block navclass %}active{%endblock%}
+{% block content %}
+<section id="content" class="content">
+{% block content_title %}
+{% endblock %}
+
+{% for article in articles_page.object_list %}
+        <article class="hentry">
+            <header>
+				<i class="icone fa fa-quote-left fa-2x pull-left fa-border fa-inverse"></i>
+            	<h3 class="entry-title adjustline"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
+            </header>
+            <div class="entry-content"> {{ article.summary }} </div>
+        </article>
+{% endfor %}
+{% include 'pagination.html' %}
+</section><!-- content -->
+{% endblock content %}
