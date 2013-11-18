@@ -10,6 +10,8 @@ Configuration
 
 **GITHUB_URL** - For the Github image
 
+**STATS_CODE** - Codigos javascript para estatisticas como Google analytics ou Statcounter
+
 **SITELOGO** - Path to the image os Logo, if null, the simple site title will be show.
 
 
