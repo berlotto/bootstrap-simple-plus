@@ -7,6 +7,10 @@
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
         <link href="{{ SITEURL }}/theme/static/css/style.css" rel="stylesheet" />
 {%if ENABLE_SHARE_BUTTONS%}
+    {%if SITELOGO%}
+        <meta property="og:image" content="{{ SITEURL }}{{ SITELOGO }}" />
+        <link rel="image_src" href="{{ SITEURL }}{{ SITELOGO }}" />
+    {%endif%}
         <link href="{{ SITEURL }}/theme/static/css/share.css" rel="stylesheet" />
         <script type="text/javascript" src="{{ SITEURL }}/theme/static/js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="{{ SITEURL }}/theme/static/js/share.js"></script>
